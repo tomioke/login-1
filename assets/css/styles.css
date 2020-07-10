@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+
+.loginBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.loginBox input[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    background: rgb(187, 66, 22);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Efek saat kursor mengarah ke link */
+.loginBox input[type="submit"]:hover {
+    background: rgb(221, 185, 23);
+    color: rgb(252, 252, 248);
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] 
+{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+}
+
+.user {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    /* Posisi logo ada ditengah2 box */
+    top: calc(-100px/2);
+    left: calc(50% - 45px);
+}
+
+.loginBox a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: rgb(238, 75, 16);
+    text-align: center;
+}
+
+.loginBox :hover a {
+    color: rgb(245, 145, 14);
+}
